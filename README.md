@@ -8,6 +8,7 @@ To write a python program to implement multivariate linear regression and predic
 ### Step1
 <br>
 Load the dataset.
+
 ### Step2
 <br>
 Select Volume and Weight as features and CO2 as the target.
@@ -31,15 +32,15 @@ Predict CO2 for the given input [3300, 1300].
 #REG.NO:24901141
 
 import pandas as pd
-    from sklearn import linear_model
-    df=pd.read_csv("car (1).csv")
-    x=df[['Volume','Weight']]
-    y=df['CO2']
-    regression=linear_model.LinearRegression()
-    regression.fit(x,y)
-    print("Coefficent",regression.coef_)
-    print("Intercept",regression.intercept_)
-    print("CO2 required is",regression.predict([[33001300]]))
+from sklearn import linear_model
+df=pd.read_csv("car (1).csv")
+x=df[['Volume','Weight']]
+y=df['CO2']
+regression=linear_model.LinearRegression()
+regression.fit(x,y)
+print("Coefficent",regression.coef_)
+print("Intercept",regression.intercept_)
+girprint("CO2 required is",regression.predict([[33001300]]))
 
 
 
